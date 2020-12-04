@@ -17,7 +17,7 @@ Neste projeto, utilizei as seguintes tecnologias:
 
 Projeto criado para aperfeiçoar alguns conhecimentos na Lib 'react-native-axios'
 
-## 🔖 Start
+## 🔖 Acessando o projeto
 
 #### Git clone
 
@@ -36,4 +36,4 @@ react-native run-android
 
 
 
-Por Celso Junio.
+### Por Celso Junio.
