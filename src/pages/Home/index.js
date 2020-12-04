@@ -18,6 +18,18 @@ export default function Home() {
   const [temCep, setTemCep] = useState(false);
   const [inputCep, setInputCep] = useState('');
 
+  async function gerarCep() {
+    if (inputCep == '' || inputCep.length != 8) {
+      alert('Digite um Cep válido');
+    } else {
+      await api.get(`/ws/${inputCep}/json`).then((response) => {
+        console.log(response.data.bairro);
+        setAll(response.data);
+      });
+      setTemCep(true);
+      setInputCep('');
+    }
+  }
 
   return (
     <SafeAreaView style={styles.container}>
@@ -31,7 +43,7 @@ export default function Home() {
           onChangeText={(cep) => setInputCep(cep)}
         />
 
-        <TouchableOpacity style={styles.findButton}>
+        <TouchableOpacity style={styles.findButton} onPress={gerarCep}>
           <Image source={iconSearch} width="60" height="60" />
         </TouchableOpacity>
       </View>
