@@ -1,6 +1,7 @@
 ## ViaCEP - Consulte CEPs de todo o Brasil
 <p align="left">
 <img alt="CourseApp" src="/screenshot/viaCep01.PNG" width="281" height="500"/>
+<img alt="CourseApp" src="https://github.com/CelsoJunioDev/Consult-Zip/blob/master/screenshot/ScreeshotVideo.gif"/>
 <img alt="CourseApp" src="/screenshot/viaCep02.PNG" width="281" height="500" />
 </p>
 
